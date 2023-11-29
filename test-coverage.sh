@@ -4,7 +4,7 @@
 yarn test --coverage
 
 #copying lcov.info file which has coverage to separet folder
-cp /Users/nainadixit/eversports/tools/jest/coverage/lcov.info /Users/nainadixit/eversports/tools/jest/final-output-coverage
+cp /Users/nainadixit/tools/jest/coverage/lcov.info /Users/nainadixit/tools/jest/final-output-coverage
 
 #renaming lcov.info file
 mv lcov.info lcov_unit.info
@@ -13,7 +13,7 @@ mv lcov.info lcov_unit.info
 yarn test:integration --coverage --maxWorkers=2
 
 #copying lcov.info file which has coverage to separet folder
-cp /Users/nainadixit/eversports/tools/jest/coverage/lcov.info /Users/nainadixit/eversports/tools/jest/final-output-coverage
+cp /Users/nainadixit/tools/jest/coverage/lcov.info /Users/nainadixit/tools/jest/final-output-coverage
 
 #renaming lcov.info file
 mv lcov.info lcov_init.info
