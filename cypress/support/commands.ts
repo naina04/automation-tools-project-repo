@@ -36,6 +36,26 @@ Cypress.Commands.add('executeSQLQuery', (query: string) => {
   });
 });
 
+// commands.ts
+
+Cypress.Commands.add('performActionWithinModal', () => {
+  // Trigger the modal to open (replace with your own logic)
+  cy.get('#openModalButton').click();
+
+  // Use within to scope commands to the modal
+  cy.get('#myModal').within(() => {
+    // Perform actions within the modal
+    cy.get('#modalInput').type('Hello, Modal!');
+    cy.get('#modalSubmitButton').click();
+  });
+
+  // Confirm that the modal is closed (replace with your own logic)
+  cy.get('#myModal').should('not.be.visible');
+});
+
+// other custom commands...
+
+
 // Custom command to log in
 Cypress.Commands.add('login', (username, password) => {
   cy.visit('/login'); // Assuming your login page is at /login
