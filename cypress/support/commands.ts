@@ -23,15 +23,18 @@ Cypress.Commands.add('resetDB', () => {
   });
 });
 
-// other custom commands...
+// commands.ts
 
-const resetDb = () => {
-  
-}
-
-const execSQL = (query: string): Cypress.Chainable<Cypress.Exec> => {
-  
-}
+Cypress.Commands.add('executeSQLQuery', (query: string) => {
+  // Make an API request to your backend with the SQL query
+  cy.request({
+    method: 'POST',
+    url: 'https://your-api-endpoint/execute-sql-query',
+    body: {
+      query,
+    },
+  });
+});
 
 // Custom command to log in
 Cypress.Commands.add('login', (username, password) => {
