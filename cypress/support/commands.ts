@@ -11,6 +11,20 @@
     }
   }
 
+Cypress.Commands.add('resetDB', () => {
+  // Make an API request to reset or seed your database
+  // Replace the following with the actual API endpoint and payload for your application
+  cy.request({
+    method: 'POST',
+    url: 'https://your-api-endpoint/reset-db',
+    body: {
+      // Your payload or parameters for resetting the database
+    },
+  });
+});
+
+// other custom commands...
+
 const resetDb = () => {
   
 }
