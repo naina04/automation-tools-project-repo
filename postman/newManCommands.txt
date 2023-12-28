@@ -14,4 +14,4 @@ newman run <name of json file> -d <name of file for data> -e <file name for env 
 -g <add name of golbal variables file>
 Note - No spaces should be there in your fileNames
 Example = 
-newman run Users.postman_collection.json -d test_data_Create_User.csv -e QA.postman_environment.json
+newman run Users.postman_collection_updated.json -e QA.postman_environment.json
