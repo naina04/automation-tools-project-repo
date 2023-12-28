@@ -1,6 +1,8 @@
-UserName,Job        1. Updated_UserName,Job
-James,Leader        2. Lukas,Manager       
+UserName,Job       
+James,Leader          
 Jason,Servant
 Michael,Driver
 Mitchell,Cook
 Cristal,Professor
+Updated_Username,Job
+Lukas, Manager
