@@ -15,3 +15,10 @@ newman run <name of json file> -d <name of file for data> -e <file name for env 
 Note - No spaces should be there in your fileNames
 Example = 
 newman run Users.postman_collection_updated.json -e QA.postman_environment.json
+
+Export test results from Postman -
+newman run YourCollection.json -e YourEnvironment.json --reporters json --reporter-json-export output.json
+Example = 
+newman run Users.postman_collection_updated.json -e QA.postman_environment.json --reporters json --reporter-json-export Test_results.json
+
+Check the folder where you executed the command and you should get a json file
