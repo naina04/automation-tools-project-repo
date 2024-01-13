@@ -4,7 +4,7 @@
 yarn test --coverage
 
 #copying lcov.info file which has coverage to separet folder
-cp /Users/nainadixit/tools/jest/coverage/lcov.info /Users/nainadixit/tools/jest/final-output-coverage
+cp /Users/nainadixit/pathoflcov.info /Users/nainadixit/pathtocopythelcov.info
 
 #renaming lcov.info file
 mv lcov.info lcov_unit.info
@@ -13,12 +13,12 @@ mv lcov.info lcov_unit.info
 yarn test:integration --coverage --maxWorkers=2
 
 #copying lcov.info file which has coverage to separet folder
-cp /Users/nainadixit/tools/jest/coverage/lcov.info /Users/nainadixit/tools/jest/final-output-coverage
+cp /Users/nainadixit/path of lcov.info /Users/nainadixit/pathtocopythelcov.info
 
 #renaming lcov.info file
 mv lcov.info lcov_init.info
 
 #merge unit and integration test coverage to one file merge_lcov.info
-lcov --add-tracefile tools/jest/final-output-coverage/lcov_unit.info --add-tracefile tools/jest/final-output-coverage/lcov_init.info --output-file tools/jest/final-output-coverage/merge_lcov.info
+lcov --add-tracefile path/lcov_unit.info --add-tracefile path/lcov_init.info --output-file path/merge_lcov.info
 
 #merge_lcov.info to html report in CLI
